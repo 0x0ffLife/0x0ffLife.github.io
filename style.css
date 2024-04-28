@@ -1,0 +1,355 @@
+/*＝＝＝＝＝ 全体の設定 ＝＝＝＝＝＝ */
+
+@font-face {
+	font-family: 'DJBGetDigital';
+	src: url(font/DJBGetDigital.ttf);
+}
+
+@font-face{
+  font-family: 'Makinas-4-Flat';
+	src: url(font/Makinas-4-Flat.otf);
+}
+
+@font-face {
+	font-family: 'Makinas-4-Square';
+	src: url(font/Makinas-4-Square.otf);
+}
+
+@font-face{
+  font-family: 'MCyanagi';
+	src: url(font/MCyanagi.ttf);
+}
+
+body {
+  margin: 0;
+  background-image: url(background.jpg);
+  background-size: cover;
+  color:#d4e4ff;
+}
+
+h1 {
+  font-size: 120px;/* フォントの大きさ */
+  font-family: DJBGetDigital;/* フォントの種類 */
+  text-align: center;/* 文字・画像を中央にそろえる */
+  background-image: url(img/deadcells.jpg);/* 背景画像 */
+  height: 320px;/* 高さ */
+  padding-top: 40px;/* 上がわの余白 */
+  background-repeat: no-repeat;/* 背景のくり返しをやめる */
+  background-position: top center;/* 背景の位置 */
+}
+
+.luminous{
+  text-shadow: 0 0 10px #52ebff,0 0 15px #52ebff;
+}
+
+header h2{
+  font-family: DJBGetDigital;
+  font-size: 50px;
+  padding-left: 7%;
+  padding-bottom: 4%;
+}
+
+header h3{
+  writing-mode: vertical-rl;
+  text-align:top center;/*text-positionだったけど効かないから変えてみた*/
+  font-family: MCyanagi;
+  font-size: 25px;
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+header {
+  background-image: url(img/title.png);/* 背景画像 */
+  height: 600px;/* 高さ */
+  padding-top: 150px;/* 上がわの余白 */
+  background-size:cover;
+  background-repeat: no-repeat;/* 背景のくり返しをやめる */
+  background-position: top center;/* 背景の位置 */
+  background-attachment:fixed;
+}
+
+.background{
+  background-image:url(img/background.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-attachment:fixed;
+  text-align:center;
+  font-family: Makinas-4-Flat;
+}
+
+#background{
+  background:rgba(212,228,255,0.15);
+  border-radius:25px;
+  margin-right:15%;
+  margin-left:15%;
+}
+
+/* ナビゲーションの箱 */
+nav {
+  background-color: #19273d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Makinas-4-Flat;
+}
+
+/* リスト全体 */
+nav ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* １つ１つのリスト */
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+/* リンク */
+nav a {
+  color: #d4e4ff;
+  text-decoration: none;
+}
+
+/* リンクにふれた時 */
+nav a:hover {
+  color: #42d9ff;
+  text-shadow: 0 0 10px #52ebff,0 0 15px #52ebff;
+}
+
+nav span{
+  font-family:Makinas-4-Square;
+}
+
+.shop span{
+  font-family:Makinas-4-Square;
+}
+
+footer span{
+  font-family:Makinas-4-Square;
+}
+
+.access span{
+  font-family:Makinas-4-Square;
+}
+
+.production span{
+  font-family:Makinas-4-Square;
+}
+
+.shop {
+  padding-top:3%;
+}
+.shop p{
+  font-size:23px;
+}
+
+.space{
+  margin-bottom:3%;
+  opacity:0;
+}
+
+/* h2見出し */
+.title {
+  font-size:43px;
+  background-position:center;
+  background-image:url(img/bar.gif);
+  height:125px;
+  background-size:350px;
+  background-repeat:no-repeat;
+  text-shadow: 0 0 10px #52ebff,0 0 15px #52ebff;
+}
+
+h3 {
+  font-size:35px;
+}
+
+.background-charactor{
+background:rgba(212,228,255,0.15);
+margin:7%;
+border-radius:25px;
+padding-bottom:60px;
+padding-top:60px;
+}
+
+.photo p{
+  font-size:23px;
+}
+
+.photo h3{
+  font-family:DJBGetDigital;
+  text-shadow: 0 0 20px #52ebff,0 0 20px #52ebff;
+  font-size: 50px;
+}
+
+#shrimp{
+  margin-top:80px;
+}
+/*一部の文字色を変更*/
+.fire{
+  color:#cf2b06;
+}
+.water{
+  color:#1884d6;
+}
+.poison{
+  color:#3f750c;
+}
+.PoisonWater{
+  color:#10a38b;
+}
+.mistery{
+  color:#2bfff8;
+}
+.metalic{
+  color:#ababab;
+}
+
+/* ===== 値段表のスタイル ===== */
+/* セクション */
+.price {
+  padding: 30px;
+}
+
+.price p{
+font-size:20px;  
+padding-bottom:40px;
+}
+
+/* 表 */
+.price table {
+  border-collapse: collapse;/* 表の隙間（すきま） */
+  width:100%;
+}
+
+/* 表のセル */
+.price td {
+  border: 1px solid #363636;
+  padding: 10px;
+}
+
+/* 表の見出しセル */
+.price th {
+  border: 1px solid #363636;
+  padding: 10px;
+  text-align: center;
+}
+/*〇などの記号の説明*/
+.price div p{
+  display:inline-block;
+}
+
+.price p{
+  padding-right:4%;
+}
+
+.TableSpace{
+  margin-bottom:60px;
+  float:left;
+}
+
+ .TextAlignLeft{
+   text-align:left;
+ }
+
+#firstTable td{
+  background-color:#3b0101;
+}
+#firstTable th{
+  background-color:#8f1f1f;
+}
+
+.secondTable td{
+  background-color:#01253b;
+}
+.secondTable th{
+  background-color:#1f6f8f;
+}
+
+#thirdTable{
+  width:100%;
+}
+
+#thirdTable td{
+  background-color:#13360b;
+}
+
+#thirdTable th{
+  background-color:#1b4a10;
+}
+
+.attack{
+  text-shadow: 0 0 10px #ff5252,0 0 15px #ff5252;
+  color:#ffadad;
+}
+.defense{
+  text-shadow: 0 0 10px #52ebff,0 0 15px #52ebff;
+  color:#adefff;
+}
+.AttackDefense{
+  text-shadow: 0 0 10px #60ff52,0 0 15px #60ff52;
+  color:#adffb7;
+}
+
+/* ===== アクセス情報のスタイル ===== */
+/* セクション */
+.access {
+  padding: 100px;
+  height: 400px;
+}
+
+/* h3見出し */
+.access h3 {
+  font-size: 50px;
+  font-family: DJBGetDigital;
+  text-shadow: 40 40 1px #52ebff,40 40 1px #52ebff;
+  margin-top: 0px;
+}
+
+/* リスト */
+.access ul {
+  list-style-type: none;/* リストのマーカー */
+  padding-left: 0px;
+}
+
+/* 箱 */
+.access div {
+  text-align:left;
+  float: left;
+  width: 50%;
+}
+
+.production ul{
+  list-style-type: none;
+  font-size:20px;
+}
+
+#LastSpace{
+  padding-bottom: 65px;
+}
+
+/* フッター */
+footer {
+  background-color:#19273d;
+}
+
+footer p{
+  text-align:center;
+  font-size:25px;
+  margin-bottom:0px;
+}
+
+footer a{
+  color:#d4e4ff;
+  text-decoration:none;
+}
+
+footer a:hover{
+  text-shadow: 0 0 10px #52ebff,0 0 15px #52ebff;
+  color:#42d9ff;
+}
+
+#twitter{
+  text-align:center;
+}
