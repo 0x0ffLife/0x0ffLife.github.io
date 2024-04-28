@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Ignite-イグナイト</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<header class="luminous">
+  <h1>Ignite</h1>
+  <h2>Where are the rays of the sun?</h2>
+  <h3>てすと</h3>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#shop"><span>Ignite</span>とは</a></li>
+    <li><a href="#photo">キャラクター</a></li>
+    <li><a href="#price">属性一覧</a></li>
+    <li><a href="#access">詳細</a></li>
+    <li><a href="#twitter"><span>Twitter</span></a></li>
+  </ul>
+</nav>
+
+<div class="background">
+  <section class="space">test</section>
+  <div id="background">
+<section class="shop" id="shop">
+  <h2 class="title"><span>Ignite</span>とは</h2>
+  <p>「<span>Ignite</span>」は私が制作中の<span>2D</span>アクションゲームです。</p>
+  <p>主人公である青い人魂を操作し、地上を目指します。</p>
+</section>
+
+<section class="photo" id="photo">
+  <h2 class="title">キャラクター</h2>
+  <div class="background-charactor">
+  <img src="img/hitodama.gif" width="200">
+<h3>Igknight</h3>
+　<p>プレイヤーである人魂。<span class="fire"><strong>炎</strong>を飛ばし</span>、攻撃することができる。<br><span class="water">水に弱く</span>、触れるだけで消滅する。</p>
+　<img src="img/barldock.gif" width="300">
+  <h3>Bardock</h3>
+  <p>ゴボウによく似たモンスター。ゴボウではない。<br>普段は埋まっているが、プレイヤーを感知すると飛び出て襲ってくる。<span class="fire">炎が弱点</span>。</p>
+  <img src="img/gel.gif" width="200">
+<h3>Gel</h3>
+  <p>整備がされていない下水道によく発生するゲル状のモンスター。<br><span class="poison">毒をもっており</span>、<span class="fire">炎に耐性がある</span>。時折<span class="bomb">自爆</span>し、<span class="PoisonWater">毒水をまき散らすため</span>注意が必要。<br>見た目の割にはかなり強い。</p>
+  <img src="img/shrimp.gif" id="shrimp" width="200">
+  <h3>Epy</h3>
+  <p>洞窟に住む、衣をまとったエビ。攻撃はしてこない。<br><span class="fire">炎を受けると</span>ただのエビフライになる。</p>
+  </div>
+</section>
+
+<section class="price" id="price">
+  <h2 class="title">属性一覧</h2>
+  <p>登場するモンスターたちは<span class="fire">攻撃属性</span>と<span class="water">防御属性</span>を持っています。<br>属性ごとで相性があるので、それを駆使することがポイントです。<br>(物理、<span class="mistery">神秘</span>のどちらかと、実体、<span class="mistery">霊体</span>のどちらかはどのモンスターも必ず持っています。)</p>
+  <table class="TableSpace" id="firstTable">
+    <tr>
+      <th class="attack">攻撃属性</th>
+      <th class="attack">効果</th>
+    </tr>
+    <tr>
+      <td>物理</td>
+      <td class="TextAlignLeft">実体を持つモンスター全てに有効。<span class="mistery">霊体のモンスター</span>には無効。</td>
+    </tr>
+    <tr>
+      <td class="mistery">神秘</td>
+      <td class="TextAlignLeft"><span class="mistery">霊体のモンスター</span>全てに有効。実体を持つモンスターには無効。</td>
+    </tr>
+    <tr>
+      <td class="fire">炎</td>
+      <td class="TextAlignLeft">Dotダメージを与える。<span class="fire">可燃性のモンスター</span>に効果絶大。<span class="water">不燃性</span>のモンスターには弱い。モンスターだけでなく、周りの物も燃やすことができる。</td>
+    </tr>
+    <tr>
+      <td class="water">水</td>
+      <td class="TextAlignLeft"><span class="water">消火ができる</span>。<span class="fire">炎属性のモンスター</span>に効果絶大。なお、<span class="fire">可燃性のモンスター</span>には弱い。</td>
+    </tr>
+    <tr>
+      <td class="poison">毒</td>
+      <td class="TextAlignLeft">Dotダメージを与える。攻撃力、防御力、素早さなど、あらゆるステータスが減少する。<span class="fire">可燃</span>、<span class="water">不燃</span>に問わず効果が大きいが、<span class="metalic">金属属性</span>には効果が薄い。</td>
+    </tr>
+  </table>
+  <table class="TableSpace secondTable">
+    <tr>
+      <th class="defense">防御属性</th>
+      <th class="defense">効果</th>
+    <tr>
+      <tr>
+        <td>実体</td>
+        <td class="TextAlignLeft">物理攻撃の影響を受ける。<span class="mistery">神秘攻撃</span>の影響は受けない。</td>
+      </tr>
+      <tr>
+        <td class="mistery">霊体</td>
+        <td class="TextAlignLeft"><span class="mistery">神秘攻撃</span>の影響を受ける。物理攻撃の影響は受けない。</td>
+      </tr>
+      <tr>
+        <td class="fire">可燃</td>
+        <td class="TextAlignLeft"><span class="fire">炎攻撃</span>の影響を大きく受ける。<span class="water">水攻撃</span>の影響はあまり受けない。</td>
+      </tr>
+      <tr>
+        <td class="water">不燃</td>
+        <td class="TextAlignLeft"><span class="water">水攻撃</span>の影響を大きく受ける。<span class="fire">炎攻撃</span>の影響をあまり受けない。</td>
+      </tr>
+      <tr>
+        <td class="metalic">金属</td>
+        <td class="TextAlignLeft"><span class="water">水攻撃</span>や<span class="fire">炎攻撃</span>を受けるとステータスが減少する。<span class="fire">炎攻撃</span>を受けると熱くなり、酸化する。<span class="water">水攻撃</span>を受けると錆びる。<span class="poison">毒</span>があまり効かない。</td>
+      </tr>
+  </table>
+  <table id="thirdTable">
+    <tr>
+      <th class="AttackDefense">早見表</th>
+      <th>実体</th>
+      <th class="mistery">霊体</th>
+      <th class="fire">可燃</th>
+      <th class="water">不燃</th>
+      <th class="metalic">金属</th>
+    </tr>
+    <tr>
+      <th>物理</th> <td>〇</td> <td>×</td> <td>-</td> <td>-</td> <td>-</td>
+    </tr>
+    <tr>
+      <th class="mistery">神秘</th> <td>×</td> <td>〇</td> <td>-</td> <td>-</td> <td>-</td>
+    </tr>
+    <tr>
+      <th class="fire">炎</th> <td>-</td> <td>-</td> <td>◎</td><td>△</td><td>◎</td>
+    </tr>
+    <tr>
+      <th class="water">水 </th> <td>-</td> <td>-</td> <td>△</td><td>◎</td><td>◎</td>
+    </tr>
+      <th class="poison">毒</th> <td>-</td> <td>-</td> <td>◎</td> <td>◎</td> <td>△</td>
+    </tr>
+  </table>
+  <div>
+  <p>◎：効果絶大</p>
+  <p>〇：効果あり</p>
+  <p>△：効果いまいち</p>
+  <p>× ：効果なし</p>
+  <p>- ：関係なし</p>
+  </div>
+</section>
+
+<section class="access" id="access">
+  <h2 class="title">詳細</h2>
+  <div>
+    <h3>Ignite</h3>
+    <ul>
+      <li>使用しているゲームエンジン：<span>Unity</span></li>
+      <li>公開日：未定</li>
+      <li>プラットフォーム：<span>Windows</span>向けとして開発中</li>
+    </ul>
+  </div>
+
+  <div>
+    <img src="img/title.png" width="100%">
+  </div>
+</section>
+
+<section class="production">
+  <h2 class="title">制作</h2>
+  <ul>
+   <li><span>Unity</span>で開発中</li>
+   <li id ="LastSpace">※所都合により、只今開発停止中。</li>
+</section>
+
+</div>
+
+<footer>
+  <h2 class="title" id="twitter"><span>Twitter</span></h2>
+  <p>
+  <a href="https://twitter.com/cyan_life1"><img src="img/my_icon.png" width="200"></a><br>
+  <a href="https://twitter.com/cyan_life1"><span>@cyan_life1</span></a><br>
+    ゲーム開発とかドット絵とか<br>
+    <span>&copy;CyanLife</span>
+  </p>
+</footer>
